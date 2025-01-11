@@ -1,0 +1,177 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: #2f3136;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .nav-link {
+    color: #fff !important;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #ddd !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+  
+  .navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    border-bottom: 3px solid #ccc;
+    position: relative;
+  }
+  
+  .hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  .hero-section .btn {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    background-color: #007bff;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-section .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Section Styling */
+  .content-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.8s, opacity 0.8s;
+  }
+  
+  .content-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .member-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s ease;
+  }
+  
+  .member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .member-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .member-card p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #2f3136;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer a:hover {
+    color: #ddd;
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Tombol "Get Started" dengan animasi pulse */
+  .hero-section .btn {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    background-color: #007bff;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite; /* Animasi pulse berulang setiap 2 detik */
+  }
+  
+  .hero-section .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Animasi pulse */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+  }
+  

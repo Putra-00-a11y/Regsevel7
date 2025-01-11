@@ -1,0 +1,112 @@
+/* Gradient background untuk body */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Styling untuk card */
+  .card {
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  /* Animasi masuk dari bawah */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Styling untuk input fields */
+  .form-control {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+  }
+  
+  /* Styling untuk button */
+  .btn {
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Styling Welcome text */
+  .welcome-text {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    animation: fadeInText 2s ease-out;
+  }
+  
+  /* Fade-in animation for text */
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Footer styling */
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .footer strong {
+    color: #ffffff;
+  }
+  
+  .license {
+    color: #007bff;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .card {
+      width: 90%;
+    }
+  
+    .welcome-text {
+      font-size: 24px;
+    }
+  }
+  
